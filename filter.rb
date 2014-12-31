@@ -1,7 +1,7 @@
-list = [1,2,3,4,5]
-puts "\n=> list: \t\t " + list.to_s 
+array = [1,2,3,4,5]
+puts "\n=> array: \t\t " + array.to_s 
 
-filtered = list.select {|e| e < 4}
-puts "\n=> filtered list: \t " + filtered.to_s
+filtered = array.select {|e| e < 4}
+puts "\n=> filtered array: \t " + filtered.to_s
 
 puts
