@@ -1,15 +1,17 @@
 
-for f in *.rb; do
+echo
+
+for f in ruby/*.rb; do
   bn=`basename $f .rb`
   rf=$bn.rb
   sf=$bn.scala
-  echo "Running $rf"
+  echo "Running ruby/$rf"
   echo "===================================="
-  time ruby $rf
+  ruby ruby/$rf
   echo; echo
-  echo "Running $sf"
+  echo "Running scala/$sf"
   echo "===================================="
-  time scala $sf
+  scala scala/$sf
   echo; echo
 done
 
