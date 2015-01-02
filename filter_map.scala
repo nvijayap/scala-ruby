@@ -1,7 +1,7 @@
 val list = List(1,2,3,4,5)
-println("\n=> list: \t\t\t " + list)
+println(f"\n=> list:                 $list%-35s")
 
 val filtered_mapped = list filter (_ < 4) map (_ * 2)
-println("\n=> filtered_mapped list: \t " + filtered_mapped)
+println(f"\n=> filtered_mapped list: $filtered_mapped%-35s")
 
 println
